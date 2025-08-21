@@ -17,8 +17,8 @@ models = [
         abbr='rlreasoner',
         type='HuggingFaceCausalLM',
         model=base_model,
-        max_steps=3,
         max_out_len=512,
     )
 ]
+#        max_steps=3,
 
