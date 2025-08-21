@@ -16,7 +16,8 @@ models = [
     dict(
         abbr='rlreasoner',
         type='HuggingFaceCausalLM',
-        model=base_model,
+        path='meta-llama/Llama-2-7b-hf',
+        # model=base_model,
         max_out_len=512,
     )
 ]
