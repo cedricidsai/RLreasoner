@@ -18,7 +18,6 @@ models = [
         type='HuggingFaceCausalLM',
         model=base_model,
         max_steps=3,
-        device='cuda',
         max_out_len=512,
     )
 ]
