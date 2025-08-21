@@ -2,6 +2,9 @@
 from rlreasoner import RLReasoner
 from opencompass.models import HuggingFaceCausalLM
 
+from opencompass.registry import MODELS
+print(MODELS)
+
 # Define the underlying base model (example: LLaMA-7B from HF)
 base_model = dict(
     type=HuggingFaceCausalLM,
@@ -21,5 +24,3 @@ models = [
     )
 ]
 
-from opencompass.registry import MODELS
-print(MODELS)
