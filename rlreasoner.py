@@ -1,6 +1,7 @@
 # rlreasoner.py
 import random
 from opencompass.models.base import BaseModel
+from opencompass.registry import MODELS
 
 @MODELS.register_module()
 class RLReasoner(BaseModel):
