@@ -13,7 +13,7 @@ base_model = dict(
 models = [
     dict(
         abbr='rlreasoner',
-        type='RLReasoner',
+        type='rlreasoner.RLReasoner',
         model=base_model,
         max_steps=3,
         device='cuda',
