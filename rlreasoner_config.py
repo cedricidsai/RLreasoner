@@ -1,5 +1,5 @@
 # rlreasoner_config.py
-from rlreasoner import RLReasoner
+from opencompass.custom.rlreasoner import RLReasoner
 from opencompass.models import HuggingFaceCausalLM
 
 
