@@ -6,5 +6,5 @@ module load CUDA/12.2.2
 conda activate rlreasoner
 cd opencompass
 python run.py \
-  --models rlreasoner \
+  --models rlreasoner_config \
   --datasets gsm8k_gen bbh_gen

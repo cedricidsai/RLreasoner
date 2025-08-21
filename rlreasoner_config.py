@@ -1,5 +1,5 @@
 # rlreasoner_config.py
-from rlreasoner import RLReasoningAGI
+from rlreasoner import RLReasoner
 from opencompass.models import HuggingFaceCausalLM
 
 # Define the underlying base model (example: LLaMA-7B from HF)
@@ -12,8 +12,8 @@ base_model = dict(
 # Wrap our AGI around the base model
 models = [
     dict(
-        abbr='my_agi',
-        type=RLReasoningAGI,
+        abbr='rlreasoner',
+        type=RLReasoner,
         model=base_model,
         max_steps=3,
         max_out_len=512,
