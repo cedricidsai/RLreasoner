@@ -20,3 +20,6 @@ models = [
         max_out_len=512,
     )
 ]
+
+from opencompass.registry import MODELS
+print(MODELS)
