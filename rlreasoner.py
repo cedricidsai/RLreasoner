@@ -34,3 +34,8 @@ class RLReasoner(BaseModel):
             # (Optional) log trace if you want to inspect later
             print(f"[TRACE] {trace} → {answer}")
         return outputs
+
+
+from opencompass.registry import MODELS
+print(MODELS)
+print(MODELS.module_dict.keys())
