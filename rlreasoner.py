@@ -2,6 +2,7 @@
 import random
 from opencompass.models.base import BaseModel
 
+@MODELS.register_module()
 class RLReasoner(BaseModel):
     """A minimal RL reasoning agent that:
        - receives a prompt
