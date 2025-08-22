@@ -19,7 +19,7 @@ models = [
         type='HuggingFaceCausalLM',
         path='meta-llama/Llama-2-7b-hf',
         # model=base_model,
-        token=os.environ['TOKEN'],
+        model_kwargs={'token':os.environ['TOKEN'],'device':'auto'},
         max_out_len=512,
     )
 ]
