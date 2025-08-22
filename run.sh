@@ -8,6 +8,6 @@ conda activate rlreasoner
 cd opencompass
 python run.py \
   --models rlreasoner_config \
-  --datasets gsm8k_gen 
-  
+  --datasets gsm8k_gen \
+  --verbose 
   #bbh_gen
