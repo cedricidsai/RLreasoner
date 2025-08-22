@@ -24,8 +24,8 @@ models = [
         # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
         # model=base_model,
         model_kwargs={'token':os.environ['HF_TOKEN']},
-        max_out_len=1024,
     )
 ]
 #        max_steps=3,
+#        max_out_len=1024,
 
