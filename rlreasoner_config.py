@@ -20,7 +20,7 @@ models = [
         abbr='rlreasoner',
         type=HuggingFaceCausalLM,
         path = 'Qwen/Qwen2.5-0.5B-Instruct',
-        model_kwargs=dict(token=os.environ['HF_TOKEN'], device_map='auto'),
+        # model_kwargs=dict(token=os.environ['HF_TOKEN'], device_map='auto'),
     )
 ]
 #        max_steps=3,
