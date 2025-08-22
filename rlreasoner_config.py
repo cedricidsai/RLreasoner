@@ -8,7 +8,8 @@ import os
 # Define the underlying base model (example: LLaMA-7B from HF)
 base_model = dict(
     type=HuggingFaceCausalLM,
-    path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    path='meta-llama/Llama-2-7b-hf',
     max_out_len=512,
 )
 
@@ -17,7 +18,8 @@ models = [
     dict(
         abbr='rlreasoner',
         type='HuggingFaceCausalLM',
-        path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+        path='meta-llama/Llama-2-7b-hf',
+        # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
         # model=base_model,
         # model_kwargs={'token':os.environ['TOKEN']},
         max_out_len=512,
