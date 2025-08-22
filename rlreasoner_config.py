@@ -19,7 +19,7 @@ models = [
         type='HuggingFaceCausalLM',
         path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
         # model=base_model,
-        model_kwargs={'token':os.environ['TOKEN'],'device':'auto'},
+        model_kwargs={'token':os.environ['TOKEN']},
         max_out_len=512,
     )
 ]
