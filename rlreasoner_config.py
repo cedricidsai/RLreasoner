@@ -18,13 +18,13 @@ base_model = dict(
 models = [
     dict(
         abbr='rlreasoner',
-        type='HuggingFaceCausalLM',
+        type='HuggingFace',
         path = 'Qwen/Qwen2.5-0.5B-Instruct',
         # path='meta-llama/Llama-2-7b-hf',
         # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
         # model=base_model,
         model_kwargs={'token':os.environ['HF_TOKEN'], 'device_map':'cuda'},
-        max_out_len=512,
+        max_out_len=1024,
     )
 ]
 #        max_steps=3,
