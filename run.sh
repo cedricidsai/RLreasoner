@@ -9,5 +9,6 @@ cd opencompass
 python run.py \
   --models rlreasoner_config \
   --datasets gsm8k_gen \
-  -a vllm 
+  -a vllm \
+  --debug
   #bbh_gen
