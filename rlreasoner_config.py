@@ -9,7 +9,8 @@ import os
 base_model = dict(
     type=HuggingFaceCausalLM,
     # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
-    path='meta-llama/Llama-2-7b-hf',
+    # path='meta-llama/Llama-2-7b-hf',
+    path = 'Qwen/Qwen3-Embedding-0.6B',
     max_out_len=512,
 )
 
@@ -18,7 +19,8 @@ models = [
     dict(
         abbr='rlreasoner',
         type='HuggingFaceCausalLM',
-        path='meta-llama/Llama-2-7b-hf',
+        path = 'Qwen/Qwen3-Embedding-0.6B',
+        # path='meta-llama/Llama-2-7b-hf',
         # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
         # model=base_model,
         model_kwargs={'token':os.environ['HF_TOKEN'], 'device_map':'cuda'},
