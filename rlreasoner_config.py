@@ -10,7 +10,7 @@ base_model = dict(
     type=HuggingFaceCausalLM,
     # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
     # path='meta-llama/Llama-2-7b-hf',
-    path = 'Qwen/Qwen2-7B-Instruct',
+    path = 'Qwen/Qwen2.5-0.5B-Instruct',
     max_out_len=512,
 )
 
@@ -19,7 +19,7 @@ models = [
     dict(
         abbr='rlreasoner',
         type='HuggingFaceCausalLM',
-        path = 'Qwen/Qwen2-7B-Instruct',
+        path = 'Qwen/Qwen2.5-0.5B-Instruct',
         # path='meta-llama/Llama-2-7b-hf',
         # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
         # model=base_model,
