@@ -10,5 +10,6 @@ python run.py \
   --models rlreasoner_config \
   --datasets gsm8k_gen \
   -a vllm \
+  --hf-type base \
   --debug
   #bbh_gen
