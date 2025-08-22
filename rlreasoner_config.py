@@ -1,6 +1,7 @@
 # rlreasoner_config.py
 from opencompass.models.rlreasoner import RLReasoner
 from opencompass.models import HuggingFaceCausalLM
+import os
 
 
 
@@ -18,6 +19,7 @@ models = [
         type='HuggingFaceCausalLM',
         path='meta-llama/Llama-2-7b-hf',
         # model=base_model,
+        token=os.environ['TOKEN'],
         max_out_len=512,
     )
 ]
