@@ -18,7 +18,7 @@ base_model = dict(
 models = [
     dict(
         abbr='rlreasoner',
-        type=HuggingFaceCausalLM,
+        type='HuggingFaceCausalLM',
         path = 'Qwen/Qwen2.5-0.5B-Instruct',
         # path='meta-llama/Llama-2-7b-hf',
         # path="deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
